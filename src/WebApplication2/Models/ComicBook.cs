@@ -26,7 +26,9 @@ namespace WebApplication2.Models
         public string CoverImageFileName 
         {
             get {
-                return SeriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";    
+                string str = SeriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
+                Console.WriteLine(str);
+                return str;    
                 }
         }
     }
